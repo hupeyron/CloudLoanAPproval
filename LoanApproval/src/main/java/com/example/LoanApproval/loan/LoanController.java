@@ -30,7 +30,11 @@ public class LoanController {
         //appel AppManager pour savoir réponse
         //si accepted compte crédité et approuved retourné
         return Reponse.ACCEPTED;
+    }
 
-
+    @GetMapping("/Hello")
+    public @ResponseBody
+    String SayHello(){
+        return "hello";
     }
 }
